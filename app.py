@@ -87,8 +87,8 @@ def update_graph(xaxis_column_name, yaxis_column_name, year_value):
             mode='markers',
             customdata=dff[dff['NA_ITEM'] == yaxis_column_name]['GEO'],
             marker={
-                'size': 10,
-                'color':'rgb(22, 96, 167)',
+                'size': 14,
+                'color':'rgba(152, 0, 0, .8)',
                 'opacity': 0.5,
                 'line': {'width': 0.5, 'color': 'white'}
             }
@@ -122,8 +122,8 @@ def update_graph(indicator_name, country_name):
             text=dff[dff['NA_ITEM'] == indicator_name]['Value'],
             mode='line',
             line = dict(
-                color = ('rgb(22, 96, 167)'),
-                width = 4,)
+                color = ('rgba(152, 0, 0, .8)'),
+                width = 6,)
         )],
         'layout': go.Layout(
             xaxis={
